@@ -10,17 +10,18 @@ import java.util.StringTokenizer;
 public class SlackBotServiceTest {
 
     private SlackBotService slackBotService;
+
     @Before
-    public void itit(){
+    public void itit() {
         this.slackBotService = new SlackBotService();
     }
 
     @Test
     public void 스트링버퍼테스트() {
         String text = "<sssss> add 이름 나이 성별";
-        text = text.replaceAll("<[^>]*>", "" );
+        text = text.replaceAll("<[^>]*>", "");
         StringTokenizer stringTokenizer = new StringTokenizer(text);
-        while (stringTokenizer.hasMoreTokens()){
+        while (stringTokenizer.hasMoreTokens()) {
             log.info(stringTokenizer.nextToken());
         }
     }

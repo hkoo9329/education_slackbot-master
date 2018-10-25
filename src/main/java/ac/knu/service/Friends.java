@@ -14,17 +14,18 @@ public class Friends {
             this.sex = sex;
         }
     }
+
     private String name;
     private int age;
     private Sex sex;
 
-    public Friends (String name, int age, Sex sex){
+    public Friends(String name, int age, Sex sex) {
         this.name = name;
-        this.age =age;
+        this.age = age;
         this.sex = sex;
     }
 
-    public String toString(){
-        return name + "\t"+ String.valueOf(age) +"\t"+ sex;
+    public String toString() {
+        return name + "\t" + String.valueOf(age) + "\t" + sex;
     }
 }

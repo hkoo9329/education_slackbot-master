@@ -29,7 +29,6 @@ public class SlackBotService extends Bot {
         log.info(text);
         String commandList = commandParsingService.parseCommand(text);
         reply(session, event, commandList);
-
     }
 
     @Value("${slackBotToken}")
