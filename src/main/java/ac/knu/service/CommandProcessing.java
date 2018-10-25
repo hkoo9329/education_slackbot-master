@@ -12,8 +12,12 @@ public class CommandProcessing {
     }
 
     public String addFriend(String friendName, int friendAge, Friends.Sex friendSex) {
-        if (friends.size() > MAXMAPSIZE)
+        if (isFriendsListFull()) {
             return "추가할수 있는 친구의 수가 최대입니다.";
+        }
+        else if(friendNameCheck(friendName)){
+            return "이미 존재하는 이름입니다. 이름은 고유해야 합니다.";
+        }
         else {
             Friends friend = new Friends(friendName, friendAge, friendSex);
             friends.put(friendName, friend);
@@ -22,7 +26,7 @@ public class CommandProcessing {
     }
 
     public String removeFriend(String friendName) {
-        if (!friends.containsKey(friendName)) {
+        if (!friendNameCheck(friendName)) {
             return "해당친구는 목록에 존재하지 않습니다.";
         } else {
             friends.remove(friendName);
@@ -32,7 +36,7 @@ public class CommandProcessing {
 
     public String printFriendsList() {
         String printListString = "";
-        if (friends.size() <= 0) {
+        if (isFriendsListEmpty()) {
             return "리스트에 친구가 존재하지 않습니다.";
         }
         for (String key : friends.keySet()) {
@@ -42,10 +46,22 @@ public class CommandProcessing {
     }
 
     public String findFriend(String friendName) {
-        if (!friends.containsKey(friendName)) {
+        if (!friendNameCheck(friendName)) {
             return "해당친구는 목록에 존재하지 않습니다.";
         } else {
             return friends.get(friendName).toString();
         }
+    }
+
+    public boolean isFriendsListFull() {
+        return friends.size() > MAXMAPSIZE;
+    }
+
+    public boolean isFriendsListEmpty(){
+        return friends.size() <= 0;
+    }
+
+    public boolean friendNameCheck(String friendName){
+        return friends.containsKey(friendName);
     }
 }
