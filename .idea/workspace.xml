@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="2e2f155e-35d3-47f3-86b6-3a03cd958c50" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ac/knu/service/CommandParsingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ac/knu/service/CommandParsingService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ac/knu/service/CommandProcessing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ac/knu/service/CommandProcessing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ac/knu/service/Friends.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ac/knu/service/Friends.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ac/knu/service/SlackBotService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ac/knu/service/SlackBotService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ac/knu/service/CommandProcessingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ac/knu/service/CommandProcessingTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -85,26 +89,37 @@
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.closed" value="4" />
+          <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.21" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="454" />
+          <entry key="java" value="628" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="454" />
+          <entry key="JAVA" value="628" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
-      <usages-collector id="statistics.file.types.open" />
-      <usages-collector id="statistics.file.extensions.open" />
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="8" />
+          <entry key="YAML" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="8" />
+          <entry key="yml" value="1" />
+        </counts>
+      </usages-collector>
     </session>
     <session id="623229599">
       <usages-collector id="statistics.file.extensions.edit">
@@ -120,12 +135,12 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ac/knu/service/CommandProcessing.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+            <state relative-caret-position="247">
+              <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
               <folding>
                 <element signature="e#197#198#0" expanded="true" />
                 <element signature="e#253#254#0" expanded="true" />
@@ -135,6 +150,100 @@
                 <element signature="e#1704#1705#0" expanded="true" />
                 <element signature="e#1760#1761#0" expanded="true" />
                 <element signature="e#1814#1815#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ac/knu/SlackBotApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="13" selection-end-line="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="5" column="34" lean-forward="true" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ac/knu/service/CommandParsingService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="236">
+              <caret line="30" column="51" selection-start-line="30" selection-start-column="51" selection-end-line="30" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ac/knu/service/SlackBotService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="217">
+              <caret line="27" column="38" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ac/knu/service/Friends.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+              <folding>
+                <element signature="e#460#461#0" expanded="true" />
+                <element signature="e#529#530#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ac/knu/service/CommandProcessingTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="25" column="55" lean-forward="true" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#285#286#0" expanded="true" />
+                <element signature="e#344#345#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ac/knu/service/SlackBotServiceTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="21" column="46" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ac/knu/service/CommandParsingServiceTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="14" column="60" selection-start-line="14" selection-start-column="60" selection-end-line="14" selection-end-column="60" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ac/knu/service/Gender.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+              <folding>
+                <element signature="e#119#120#0" expanded="true" />
+                <element signature="e#149#150#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -158,13 +267,14 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/ac/knu/SlackBotApplication.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/src/main/java/ac/knu/service/CommandParsingService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ac/knu/service/SlackBotService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ac/knu/service/Friends.java" />
         <option value="$PROJECT_DIR$/src/test/java/ac/knu/service/CommandParsingServiceTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/ac/knu/service/CommandProcessingTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/ac/knu/service/SlackBotServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/ac/knu/service/CommandProcessing.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ac/knu/service/Friends.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ac/knu/service/Gender.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ac/knu/service/SlackBotService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ac/knu/service/CommandParsingService.java" />
       </list>
     </option>
   </component>
@@ -175,11 +285,10 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="692" />
-    <option name="y" value="30" />
-    <option name="width" value="980" />
-    <option name="height" value="1040" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="952" />
+    <option name="width" value="977" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -229,28 +338,59 @@
               <item name="knu" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="education_slackbot-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="education_slackbot-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="education_slackbot-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="education_slackbot-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="education_slackbot-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="education_slackbot-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="education_slackbot-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="education_slackbot-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540449764339" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540539595566" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="ac.knu.service" />
+    </key>
+    <key name="MoveInnerDialog.RECENTS_KEY">
+      <recent name="ac.knu.service" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\github\test_slackbot\education_slackbot-master\src\test\java\ac\knu\service" />
       <recent name="D:\github\test_slackbot\education_slackbot-master\src\main\java\ac\knu\service" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="ac.knu.service" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -265,8 +405,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SlackBotServiceTest.스트링버퍼테스트">
-    <configuration name="CommandParsingServiceTest.현재시간_출력_포멧확인" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.SlackBotApplication">
+    <configuration name="SlackBotApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ac.knu.SlackBotApplication" />
+      <module name="slackbot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ac.knu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CommandParsingServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="slackbot" />
       <extension name="coverage">
         <pattern>
@@ -276,8 +429,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="ac.knu.service" />
       <option name="MAIN_CLASS_NAME" value="ac.knu.service.CommandParsingServiceTest" />
-      <option name="METHOD_NAME" value="현재시간_출력_포멧확인" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -296,7 +447,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CommandProcessingTest.리스트에_친구가_한명도_없을때_예외처리" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SlackBotServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="slackbot" />
       <extension name="coverage">
         <pattern>
@@ -305,25 +456,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ac.knu.service" />
-      <option name="MAIN_CLASS_NAME" value="ac.knu.service.CommandProcessingTest" />
-      <option name="METHOD_NAME" value="리스트에_친구가_한명도_없을때_예외처리" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CommandProcessingTest.removeFriend_메소드_예외처리_테스트" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="slackbot" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ac.knu.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ac.knu.service" />
-      <option name="MAIN_CLASS_NAME" value="ac.knu.service.CommandProcessingTest" />
-      <option name="METHOD_NAME" value="removeFriend_메소드_예외처리_테스트" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="ac.knu.service.SlackBotServiceTest" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -345,19 +478,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.CommandProcessingTest.리스트에_친구가_한명도_없을때_예외처리" />
       <item itemvalue="JUnit.CommandProcessingTest" />
-      <item itemvalue="JUnit.CommandProcessingTest.removeFriend_메소드_예외처리_테스트" />
-      <item itemvalue="JUnit.CommandParsingServiceTest.현재시간_출력_포멧확인" />
       <item itemvalue="JUnit.SlackBotServiceTest.스트링버퍼테스트" />
+      <item itemvalue="JUnit.CommandParsingServiceTest" />
+      <item itemvalue="JUnit.SlackBotServiceTest" />
+      <item itemvalue="Application.SlackBotApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SlackBotServiceTest.스트링버퍼테스트" />
-        <item itemvalue="JUnit.CommandParsingServiceTest.현재시간_출력_포멧확인" />
-        <item itemvalue="JUnit.CommandProcessingTest.removeFriend_메소드_예외처리_테스트" />
+        <item itemvalue="Application.SlackBotApplication" />
+        <item itemvalue="JUnit.SlackBotServiceTest" />
         <item itemvalue="JUnit.CommandProcessingTest" />
-        <item itemvalue="JUnit.CommandProcessingTest.리스트에_친구가_한명도_없을때_예외처리" />
+        <item itemvalue="JUnit.CommandParsingServiceTest" />
+        <item itemvalue="JUnit.SlackBotServiceTest.스트링버퍼테스트" />
       </list>
     </recent_temporary>
   </component>
@@ -375,18 +508,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CommandParsingServiceTest_명령어_입력_오류_성별_예외처리테스트 - 2018.10.22 at 19h 05m 58s.xml">
-      <configuration name="CommandParsingServiceTest.명령어_입력_오류_성별_예외처리테스트" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CommandProcessingTest_리스트에_친구가_한명도_없을때_예외처리 - 2018.10.25 at 15h 19m 34s.xml">
-      <configuration name="CommandProcessingTest.리스트에_친구가_한명도_없을때_예외처리" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CommandProcessingTest_리스트에_친구가_한명도_없을때_예외처리 - 2018.10.25 at 15h 21m 05s.xml">
-      <configuration name="CommandProcessingTest.리스트에_친구가_한명도_없을때_예외처리" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CommandProcessingTest_리스트에_친구가_한명도_없을때_예외처리 - 2018.10.25 at 15h 22m 07s.xml">
-      <configuration name="CommandProcessingTest.리스트에_친구가_한명도_없을때_예외처리" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CommandProcessingTest - 2018.10.25 at 15h 22m 16s.xml">
       <configuration name="CommandProcessingTest" configurationId="JUnit" />
     </history-entry>
@@ -405,12 +526,24 @@
     <history-entry file="SlackBotServiceTest_스트링버퍼테스트 - 2018.10.25 at 15h 42m 49s.xml">
       <configuration name="SlackBotServiceTest.스트링버퍼테스트" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CommandParsingServiceTest - 2018.10.26 at 16h 35m 48s.xml">
+      <configuration name="CommandParsingServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CommandProcessingTest - 2018.10.26 at 16h 35m 54s.xml">
+      <configuration name="CommandProcessingTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SlackBotServiceTest - 2018.10.26 at 16h 36m 04s.xml">
+      <configuration name="SlackBotServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SlackBotServiceTest - 2018.10.26 at 16h 36m 12s.xml">
+      <configuration name="SlackBotServiceTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2536913" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -419,7 +552,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32954547" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2528409" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2528409" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -477,22 +610,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ac/knu/SlackBotApplication.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ac/knu/service/CommandParsingServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="13" selection-end-line="19" />
+        <state relative-caret-position="190">
+          <caret line="14" column="60" selection-start-line="14" selection-start-column="60" selection-end-line="14" selection-end-column="60" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ac/knu/service/Friends.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ac/knu/service/CommandProcessingTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="96">
+          <caret line="25" column="55" lean-forward="true" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
           <folding>
-            <element signature="e#183#184#0" expanded="true" />
-            <element signature="e#221#222#0" expanded="true" />
-            <element signature="e#460#461#0" expanded="true" />
-            <element signature="e#529#530#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#285#286#0" expanded="true" />
+            <element signature="e#344#345#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -504,50 +636,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ac/knu/service/CommandProcessingTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ac/knu/SlackBotApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="25" column="55" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#285#286#0" expanded="true" />
-            <element signature="e#344#345#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ac/knu/service/CommandParsingServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="14" column="60" selection-start-line="14" selection-start-column="60" selection-end-line="14" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ac/knu/service/SlackBotService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="23" column="56" selection-start-line="23" selection-start-column="56" selection-end-line="23" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ac/knu/service/CommandParsingService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        <state relative-caret-position="152">
+          <caret line="13" selection-end-line="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="70" selection-start-column="70" selection-end-column="70" />
+        <state relative-caret-position="95">
+          <caret line="5" column="34" lean-forward="true" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ac/knu/service/Gender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+          <folding>
+            <element signature="e#119#120#0" expanded="true" />
+            <element signature="e#149#150#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ac/knu/service/SlackBotService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="27" column="38" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ac/knu/service/Friends.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+          <folding>
+            <element signature="e#460#461#0" expanded="true" />
+            <element signature="e#529#530#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ac/knu/service/CommandProcessing.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+        <state relative-caret-position="247">
+          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
           <folding>
             <element signature="e#197#198#0" expanded="true" />
             <element signature="e#253#254#0" expanded="true" />
@@ -558,6 +693,13 @@
             <element signature="e#1760#1761#0" expanded="true" />
             <element signature="e#1814#1815#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ac/knu/service/CommandParsingService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="30" column="51" selection-start-line="30" selection-start-column="51" selection-end-line="30" selection-end-column="51" />
         </state>
       </provider>
     </entry>

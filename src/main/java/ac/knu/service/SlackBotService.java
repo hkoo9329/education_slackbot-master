@@ -26,7 +26,6 @@ public class SlackBotService extends Bot {
     @Controller(events = {EventType.DIRECT_MENTION})
     public void onReceiveDM(WebSocketSession session, Event event) {
         String text = event.getText();
-        log.info(text);
         String commandList = commandParsingService.parseCommand(text);
         reply(session, event, commandList);
     }

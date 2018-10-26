@@ -22,7 +22,7 @@ public class CommandProcessingTest {
 
     @Test
     public void removeFriend_메소드_예외처리_테스트() {
-        commandProcessing.addFriend("홍길동", 25, Friends.Sex.남);
+        commandProcessing.addFriend("홍길동", 25, Gender.남);
         String result = commandProcessing.removeFriend("동이");
         Assert.assertTrue(result == "해당친구는 목록에 존재하지 않습니다.");
         result = commandProcessing.removeFriend("홍길동");

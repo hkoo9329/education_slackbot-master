@@ -15,38 +15,28 @@ public class CommandParsingService {
     }
 
     public String parseCommand(String text) {
-        String friendName = null;
-        int friendAge = -1;
-        Friends.Sex sex = null;
+
 
         try {
             text = text.replaceAll("<[^>]*>", "");
             StringTokenizer tokenizer = new StringTokenizer(text);
-            String command = tokenizer.nextToken();
+            String command = tokenizer.nextToken().toLowerCase();
 
-            if (command.equalsIgnoreCase("time")) {
-                SimpleDateFormat format = new SimpleDateFormat("yyyy년 MM월 dd일 E요일 HH시 mm분 ss초");
-                return format.format(new Date());
-
-            } else if (command.equalsIgnoreCase("add")) {
-                friendName = tokenizer.nextToken();
-                friendAge = Integer.valueOf(tokenizer.nextToken());
-                sex = Friends.Sex.valueOf(tokenizer.nextToken());
-                return commandProcessing.addFriend(friendName, friendAge, sex);
-
-            } else if (command.equalsIgnoreCase("remove")) {
-                friendName = tokenizer.nextToken();
-                return commandProcessing.removeFriend(friendName);
-
-            } else if (command.equalsIgnoreCase("list")) {
-                return commandProcessing.printFriendsList();
-
-            } else if (command.equalsIgnoreCase("find")) {
-                friendName = tokenizer.nextToken();
-                return commandProcessing.findFriend(friendName);
-
-            } else {
-                return helpMessege();
+            switch (command){
+                case "time":
+                    SimpleDateFormat format = new SimpleDateFormat("yyyy년 MM월 dd일 E요일 HH시 mm분 ss초");
+                    return format.format(new Date());
+                case "add":
+                    return commandProcessing.addFriend(tokenizer.nextToken(), Integer.valueOf(tokenizer.nextToken())
+                            , Gender.valueOf(tokenizer.nextToken()));
+                case "remove":
+                    return commandProcessing.removeFriend(tokenizer.nextToken());
+                case "list":
+                    return commandProcessing.printFriendsList();
+                case "find":
+                    return commandProcessing.findFriend(tokenizer.nextToken());
+                default:
+                    return helpMessege();
             }
         } catch (NoSuchElementException e) {
             return "명령어 입력이 잘못되었습니다.";
