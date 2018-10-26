@@ -52,7 +52,7 @@ public class CommandProcessing {
     }
 
     public boolean isFriendsListFull() {
-        return friends.size() < MAXMAPSIZE;
+        return friends.size() >= MAXMAPSIZE;
     }
 
     public boolean isFriendsListEmpty() {
