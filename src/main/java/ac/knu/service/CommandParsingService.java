@@ -22,7 +22,7 @@ public class CommandParsingService {
             StringTokenizer tokenizer = new StringTokenizer(text);
             String command = tokenizer.nextToken().toLowerCase();
 
-            switch (command){
+            switch (command) {
                 case "time":
                     SimpleDateFormat format = new SimpleDateFormat("yyyy년 MM월 dd일 E요일 HH시 mm분 ss초");
                     return format.format(new Date());
