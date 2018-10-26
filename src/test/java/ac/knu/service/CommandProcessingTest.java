@@ -26,11 +26,11 @@ public class CommandProcessingTest {
     }
     @Test
     public void addFriend_메소드_동일친구이름_예외처리_테스트(){
-        for(int i=0;i<10;i++) {
+        for(int i=0;i<9;i++) {
             commandProcessing.addFriend("테스트"+i, 25, Gender.valueOf("남"));
         }
         String result = commandProcessing.addFriend("테스트0", 25, Gender.valueOf("남"));
-        assertTrue(result.equals("이미 존재하는 이름입니다. 이름은 고유해야 합니다."));
+        assertEquals("이미 존재하는 이름입니다. 이름은 고유해야 합니다.", result);
     }
 
 

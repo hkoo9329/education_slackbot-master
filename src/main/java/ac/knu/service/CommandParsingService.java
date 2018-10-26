@@ -15,8 +15,8 @@ public class CommandParsingService {
     }
 
     public String parseCommand(String text) {
-
-
+        String friendName = null;
+        int friendAge = -1;
         try {
             text = text.replaceAll("<[^>]*>", "");
             StringTokenizer tokenizer = new StringTokenizer(text);
@@ -27,14 +27,18 @@ public class CommandParsingService {
                     SimpleDateFormat format = new SimpleDateFormat("yyyy년 MM월 dd일 E요일 HH시 mm분 ss초");
                     return format.format(new Date());
                 case "add":
-                    return commandProcessing.addFriend(tokenizer.nextToken(), Integer.valueOf(tokenizer.nextToken())
-                            , Gender.valueOf(tokenizer.nextToken()));
+                    friendName = tokenizer.nextToken();
+                    friendAge = Integer.valueOf(tokenizer.nextToken());
+                    Gender gender = Gender.valueOf(tokenizer.nextToken());
+                    return commandProcessing.addFriend(friendName, friendAge, gender);
                 case "remove":
-                    return commandProcessing.removeFriend(tokenizer.nextToken());
+                    friendName = tokenizer.nextToken();
+                    return commandProcessing.removeFriend(friendName);
                 case "list":
                     return commandProcessing.printFriendsList();
                 case "find":
-                    return commandProcessing.findFriend(tokenizer.nextToken());
+                    friendName = tokenizer.nextToken();
+                    return commandProcessing.findFriend(friendName);
                 default:
                     return helpMessege();
             }
