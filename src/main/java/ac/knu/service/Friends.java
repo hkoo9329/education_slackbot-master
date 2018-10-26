@@ -4,28 +4,18 @@ import lombok.Data;
 
 @Data
 public class Friends {
-    public enum Sex {
-        남("M"),
-        여("W");
-
-        private String sex;
-
-        Sex(String sex) {
-            this.sex = sex;
-        }
-    }
 
     private String name;
     private int age;
-    private Sex sex;
+    private Gender gender;
 
-    public Friends(String name, int age, Sex sex) {
+    public Friends(String name, int age, Gender gender) {
         this.name = name;
         this.age = age;
-        this.sex = sex;
+        this.gender = gender;
     }
 
     public String toString() {
-        return name + "\t" + String.valueOf(age) + "\t" + sex;
+        return name + "\t" + String.valueOf(age) + "\t" + gender;
     }
 }

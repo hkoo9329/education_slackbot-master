@@ -11,15 +11,13 @@ public class CommandProcessing {
         friends = new HashMap<String, Friends>();
     }
 
-    public String addFriend(String friendName, int friendAge, Friends.Sex friendSex) {
+    public String addFriend(String friendName, int friendAge, Gender friendGender) {
         if (isFriendsListFull()) {
             return "추가할수 있는 친구의 수가 최대입니다.";
-        }
-        else if(friendNameCheck(friendName)){
+        } else if (friendNameCheck(friendName)) {
             return "이미 존재하는 이름입니다. 이름은 고유해야 합니다.";
-        }
-        else {
-            Friends friend = new Friends(friendName, friendAge, friendSex);
+        } else {
+            Friends friend = new Friends(friendName, friendAge, friendGender);
             friends.put(friendName, friend);
             return "친구를 추가 했습니다.";
         }
@@ -54,14 +52,14 @@ public class CommandProcessing {
     }
 
     public boolean isFriendsListFull() {
-        return friends.size() > MAXMAPSIZE;
+        return friends.size() >= MAXMAPSIZE;
     }
 
-    public boolean isFriendsListEmpty(){
+    public boolean isFriendsListEmpty() {
         return friends.size() <= 0;
     }
 
-    public boolean friendNameCheck(String friendName){
+    public boolean friendNameCheck(String friendName) {
         return friends.containsKey(friendName);
     }
 }
